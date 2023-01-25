@@ -8,30 +8,22 @@ for each in [mayaWindow, mainWindow]:
     reload(each)
 
 
-
-
-
 def cfx_window():
     window = mainWindow.SAMPLE_QMainWindow()
+    dic_val = OrderedDict([])
+    mayaWindow_ = mayaWindow.mayaWindow_sample(window = window, title='CFX', menubarDic=dic_val)
+    mayaWindow_.show()
 
-    fileName = 'File'
-    #window.createAct(name='New', shortcut='Ctrl+N', toolTip='Create New Scene', callback=self.on_file_new))
-    editName = 'Edit'
-    helpName = 'Help'
+def widget_def():
+    '''
 
-    dic_val = OrderedDict([
-        (fileName, {}),
-        (editName, {}),
-        (helpName, {}),
-        ])
+    :return:
+    '''
 
-
-    val = mayaWindow.mayaWindow_sample(window = window, title='CFX', menubarDic=dic_val)
-    val.show()
+    pass
 
 
 '''
 from pipeline.script.CFX.Maya import cfxWindow
 cfxWindow.cfx_window()
-
 '''
