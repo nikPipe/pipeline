@@ -9,19 +9,15 @@ for each in [mayaWindow, mainWindow]:
 
 
 
-def onFileNew():
-    print('this is new')
+
 
 def cfx_window():
     window = mainWindow.SAMPLE_QMainWindow()
 
     fileName = 'File'
-    fileMenu.addAction(window.createAct(name='New', shortcut='Ctrl+N', toolTip='Create New Scene', callback=self.on_file_new))
+    #window.createAct(name='New', shortcut='Ctrl+N', toolTip='Create New Scene', callback=self.on_file_new))
     editName = 'Edit'
     helpName = 'Help'
-
-
-
 
     dic_val = OrderedDict([
         (fileName, {}),
