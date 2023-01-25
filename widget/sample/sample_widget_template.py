@@ -1,6 +1,7 @@
 
 from pipeline.import_module import *
-from widget.sample import styleSheet, commonProperty
+from pipeline.widget.sample import styleSheet, commonProperty
+
 
 try:
     from importlib import reload
