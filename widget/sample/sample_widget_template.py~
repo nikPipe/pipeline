@@ -146,6 +146,7 @@ class SAMPLE_WIDGET_TEMPLATE():
                                                                             setSpacing=set_spacing,
                                                                             setSizeConstraint=0)
 
+
         self.set_object_name(obj_name=vertical_layout, set_object_name=set_object_name, else_name='vertical_layouyt')
 
         return vertical_layout

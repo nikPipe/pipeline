@@ -51,13 +51,10 @@ class CFXWINDOW:
         name_lineedit = sample_widget_template.line_edit(set_PlaceholderText='specify the object')
         pushButton = sample_widget_template.pushButton(set_text='Create CFX Setup')
 
-        widget = sample_widget_template.grid_layout_set(list_object=[[name_label, name_lineedit], pushButton])
+        widget = sample_widget_template.grid_layout_set(list_object=[[name_label, name_lineedit],
+                                                                     pushButton])
 
         print(widget)
-
-
-
-
 
 
 
