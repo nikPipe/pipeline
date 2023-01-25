@@ -13,20 +13,12 @@ for each in [mainWindow]:
 
 
 class mayaWindow_sample(MayaQWidgetDockableMixin, QMainWindow):
-    def __init__(self, window, title='SampleWindow'):
+    def __init__(self, window, title='SampleWindow', menubarDic={}):
         super(mayaWindow_sample, self).__init__()
 
         self.setWindowTitle(title)
         self.window_ = window
-
-
-
-
-        self.window_.menuBar(self)
-
-
-
-        #self.setMenuBar(menuBar)
+        self.window_.menuBar(self, menuBarDic=menubarDic)
 
 
 

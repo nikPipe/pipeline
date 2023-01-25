@@ -11,17 +11,22 @@ class SAMPLE_QMainWindow():
         print('widget is gong to create')
 
 
-    def menuBar(self, window, menuBarDic={}, ):
+    def menuBar(self, window, menuBarDic={}):
         '''
 
         :return:
         '''
         menubar = window.menuBar()
+        for each in menuBarDic:
+            menu = menubar.addMenu(each)
+
+
+        '''
         filemenu = menubar.addMenu('File')
         filemenu.addAction(QAction('something', window))
         menubar.addMenu('Edit')
+        '''
 
-        
     def createAct(self, name, shortcut, toolTip, callback):
         '''
 
@@ -36,6 +41,19 @@ class SAMPLE_QMainWindow():
         act.setToolTip(toolTip)
         act.triggered.connect(callback)
         return act
+
+
+    def createMenu(self, name):
+        '''
+
+        :param name:
+        :return:
+        '''
+        menuDic = {}
+        menuDic[name] = {}
+
+
+        return menuDic
 
 
 
