@@ -124,8 +124,6 @@ class SAMPLE_WIDGET_TEMPLATE():
 
         splitter.setMaximumSize(QSize(max_size[0], max_size[1]))
 
-
-
         return splitter
 
     def vertical_layout(self, parent_self, set_contents_margins=[0, 0, 0, 0], set_spacing=0, set_object_name=''):
@@ -192,7 +190,12 @@ class SAMPLE_WIDGET_TEMPLATE():
         #get the no of the colum
         val = 1
         for each in list_object:
-            print(each)
+            if type(each) == list:
+                if val < len(each):
+                    val = len(each)
+
+
+        return widget
 
 
 

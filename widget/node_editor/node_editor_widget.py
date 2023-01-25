@@ -1,9 +1,9 @@
 from pipeline.import_module import *
-from widget.sample import sample_widget_template
-from widget.node_editor import node_scene
-from widget.node_editor import node_graphic_view
-from widget.node_editor.node_node import Node
-from widget.node_editor import node_edge
+from pipeline.widget.sample import sample_widget_template
+from pipeline.widget.node_editor import node_scene
+from pipeline.widget.node_editor import node_graphic_view
+from pipeline.widget.node_editor.node_node import Node
+from pipeline.widget.node_editor import node_edge
 
 try:
     from importlib import reload

@@ -1,7 +1,7 @@
 import os.path, json
 
 from pipeline.import_module import *
-from widget.node_editor import node_editor_widget
+from pipeline.widget.node_editor import node_editor_widget
 
 class NodeEditorWindow(QMainWindow):
     def __init__(self):
