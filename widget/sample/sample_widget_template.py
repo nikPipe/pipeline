@@ -178,6 +178,26 @@ class SAMPLE_WIDGET_TEMPLATE():
 
         return horizontal_layout
 
+    def grid_layout_set(self, widget='', list_object=[]):
+        '''
+
+        :param widget:
+        :param list_object: specify the list of the object in grid layout you can add list inside the list too
+        :return:
+        '''
+
+        if widget == '':
+            widget = self.widget_def()
+
+        #get the no of the colum
+        val = 1
+        for each in list_object:
+            print(each)
+
+
+
+
+
     def grid_layout(self, parent_self='', set_contents_margins=[0, 0, 0, 0], set_horizontal_space=0,
                     set_vertical_space=0, set_object_name='', set_spacing=0):
         '''
