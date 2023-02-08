@@ -58,9 +58,36 @@ class CFXWINDOW:
 
 
 
+class cfxSampleWindow(mayaWindow.mayaWindow_sample):
+    def __init__(self, title='CFX', width=500, height=800):
+        super(cfxSampleWindow, self).__init__(title=title, width=width, height=height)
+
+    def initUI(self):
+        '''
+
+        :return:
+        '''
+
+    
+    
+    def setUserData(self):
+        '''
+        SAVEING USER DATA
+        :return:
+        '''
+        super().setUserData()
+        print('this issssssss')
+        
+
+
+
+
+global cfx
+
 def cfx_window():
-    cfx = CFXWINDOW()
-    cfx.cfx_window_()
+    cfx = cfxSampleWindow()
+    cfx.show()
+    return cfx
 
 
 '''
